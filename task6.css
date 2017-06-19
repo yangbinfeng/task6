@@ -76,13 +76,16 @@ body{
     border-top: 1px solid #e2eaec;
 }
 .btn-default{
-    width: 33vw;
+    width: 33.4vw;
     border: none;
     border-radius: 0;
     font-size: 2.8rem;
     font-family: "Hiragino Sans GB";
     color: rgb(153, 153, 153);
     position: relative;
+}
+.dropdown-menu{
+    width:100%;
 }
 .content_header{
     position: fixed;
@@ -91,6 +94,7 @@ body{
     right:0;
     display: flex;
     justify-content: space-around;
+    border-bottom: 1px solid #e2eaec;
 }
 .caret{
     float: right;
@@ -103,17 +107,22 @@ body{
     border-left: 6px solid transparent;
 }
 .img_5{
-    float:left;
+    display: inline-block;
+    vertical-align: middle;
     width: 24px; height: 24px;
     background: url('css_sprites.png') -186px -124px;
 }
 .img_6{
-    float:right;
+    position: absolute;
+    top:50%;
+    right:0;
+    transform: translatey(-50%);
     width: 19px; height: 33px;
     background: url('css_sprites.png') -186px -71px;
 }
 .img_7{
-    float:left;
+    display: inline-block;
+    vertical-align: middle;
     width: 19px; height: 23px;
     background: url('css_sprites.png') -124px -74px;
 }
@@ -121,23 +130,214 @@ body{
     padding:30px;
     border-top: 1px solid #e2eaec;
 }
-.content_row_p{
+.content_row_2{
+    position: relative;
+    z-index: -1;
+}
+.content_row_span{
     font-size: 2.4rem;
     font-family: "Hiragino Sans GB";
     color: rgb(93, 93, 93);
-    line-height: 100%;
+    line-height: 160%;
+    padding:0 15px;
+    vertical-align: middle;
 }
 .content_row_p_lspan{
     font-size: 2.8rem;
     font-family: "Heiti SC";
     color: rgb(51, 51, 51);
-    line-height: 100%;
+    line-height: 160%;
+    padding:0 40px;
+    vertical-align: middle;
 }
 .content_row_p_rspan{
-    float:right;
+    position: absolute;
+    top:50%;
+    right:40px;
+    transform: translatey(-50%);
     font-size: 3rem;
     font-family: "Heiti SC";
     color: rgb(230, 59, 14);
-    line-height: 100%;
-    padding: 0 20px;
+    line-height: 160%;
+}
+@media screen and (max-width: 660px) {
+    body{
+        padding:79px 0 101px 0;
+    }
+    .header{
+        padding:6px;
+    }
+    .img_1 {
+        width: 42px; height: 44px;
+        background: url('css_sprites.png') -124px -10px;
+        right:30px;
+        position: absolute;
+        top:50%;
+        transform: translatey(-50%);
+    }
+    .btn_1 {
+        width: 72px;
+        height: 35px;
+        font-size: 1.7rem;
+    }
+    .btn_2 {
+        width: 72px;
+        height: 35px;
+        font-size: 1.7rem;
+    }
+    .img_2{
+        width: 46px; height: 40px;
+        background: url('css_sprites.png') -10px -124px;
+    }
+    .img_3{
+        width: 94px; height: 94px;
+        background: url('css_sprites.png') -10px -10px;
+    }
+    .img_4{
+        width: 42px; height: 41px;
+        background: url('css_sprites.png') -186px -10px;
+    }
+    .footer {
+        padding: 2px 25px;
+    }
+    .btn-default{
+        font-size: 1.4rem;
+    }
+    .dropdown-menu{
+        width:100%;
+        min-width: 100px;
+    }
+    .content_header{
+        top:47px;
+    }
+    .caret{
+        border-top: 4px dashed;
+        border-right: 4px solid transparent;
+        border-left: 4px solid transparent;
+    }
+    .img_5{
+        display: inline-block;
+        vertical-align: middle;
+        width: 24px; height: 24px;
+        background: url('css_sprites.png') -186px -124px;
+    }
+    .img_6{
+        display: inline-block;
+        vertical-align: middle;
+        width: 19px; height: 33px;
+        background: url('css_sprites.png') -186px -71px;
+    }
+    .img_7{
+        display: inline-block;
+        vertical-align: middle;
+        width: 19px; height: 23px;
+        background: url('css_sprites.png') -124px -74px;
+    }
+    .content_row{
+        padding:15px;
+    }
+    .content_row_span{
+        font-size: 1.2rem;
+        line-height: 160%;
+        padding:0 15px;
+    }
+    .content_row_p_lspan{
+        font-size: 1.4rem;
+        line-height: 160%;
+        padding:0 0 0 40px;
+    }
+    .content_row_p_rspan{
+        font-size: 1.5rem;
+        line-height: 160%;
+        padding: 0 10px 0 0;
+    }
+}
+@media screen and (min-width: 450px) and (max-width: 660px) {
+    body{
+        padding:96px 0 101px 0;
+    }
+    .img_1 {
+        width: 42px; height: 44px;
+        background: url('css_sprites.png') -124px -10px;
+        right:30px;
+        position: absolute;
+        top:50%;
+        transform: translatey(-50%);
+    }
+    .btn_1 {
+        width: 96px;
+        height: 46px;
+        font-size: 2.3rem;
+    }
+    .btn_2 {
+        width: 96px;
+        height: 46px;
+        font-size: 2.3rem;
+    }
+    .img_2{
+        width: 46px; height: 40px;
+        background: url('css_sprites.png') -10px -124px;
+    }
+    .img_3{
+        width: 94px; height: 94px;
+        background: url('css_sprites.png') -10px -10px;
+    }
+    .img_4{
+        width: 42px; height: 41px;
+        background: url('css_sprites.png') -186px -10px;
+    }
+    .footer {
+        padding: 2px 25px;
+    }
+    .btn-default{
+        font-size: 1.87rem;
+    }
+    .dropdown-menu{
+        width:100%;
+        min-width: 100px;
+    }
+    .content_header{
+        top:58px;
+    }
+    .caret{
+        border-top: 4px dashed;
+        border-right: 4px solid transparent;
+        border-left: 4px solid transparent;
+    }
+    .img_5{
+        display: inline-block;
+        vertical-align: middle;
+        width: 24px; height: 24px;
+        background: url('css_sprites.png') -186px -124px;
+    }
+    .img_6{
+        display: inline-block;
+        vertical-align: middle;
+        width: 19px; height: 33px;
+        background: url('css_sprites.png') -186px -71px;
+    }
+    .img_7{
+        display: inline-block;
+        vertical-align: middle;
+        width: 19px; height: 23px;
+        background: url('css_sprites.png') -124px -74px;
+    }
+    .content_row{
+        padding:20px;
+    }
+    .content_row_span{
+        font-size: 1.6rem;
+        line-height: 160%;
+        padding:0 15px;
+    }
+    .content_row_p_lspan{
+        font-size: 1.6rem;
+        line-height: 160%;
+        padding:0 0 0 40px;
+    }
+    .content_row_p_rspan{
+        font-size: 2rem;
+        line-height: 160%;
+        padding: 0 10px 0 0;
+    }
 }
